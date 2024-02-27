@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Curso Spring Boot </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div>Listado de objetos</div>
+        
+        <div>
+            <table>
+                <th:block th:each="objeto : ${listado}">
+                    <tr>
+                        <td th:text="${objeto.nombres}"></td>
+                        <td th:text="${objeto.apellidos}"></td>
+                    </tr>
+                </th:block>
+            </table>
+        </div>
+        
+        <div>            
+            <ol>
+                <li th:each="elemento : ${listado}" th:text="${elemento.toString()}"  > datos </li>
+            </ol>
+        </div>
+        
+        
+        
+        
+    </body>
+</html>

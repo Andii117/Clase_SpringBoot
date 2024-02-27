@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p th:text="'Hola, ' + ${nombre} + '!'" />
+    
+    <!-- <input type="text" name="nombre_usuario" value="Texto temporal" th:value="${nombre}" /> -->
+    
+    <input type="text" name="nombre_usuario" value="Texto temporal" th:value="${nombre}" />
+    
+   
+     
+    <p th:text="'Hola, ' + ${nombre} + '!'" />
+    
+        <p th:utext="#{bienvenida.texto}">Bienvenido!</p>
+        
+        
+        <p th:utext="#{welcome.text}">Welcome to our grocery store!</p>
+        
+
+        <p>Today is: <span th:text="${today}">13 February 2011</span></p>
+    
+    
+</body>
+</html>
